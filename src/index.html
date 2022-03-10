@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c1d0fb671f.js" crossorigin="anonymous"></script>
+
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="flex flex-row relative min-h-screen bg-light-gray">
+        <!-- sidebar -->
+        <div class="flex flex-col bg-white w-52 ">
+            <!-- logo -->
+            <a class="flex flex-col items-center px-4 pt-4" href="#">
+                <div class=" items-center text-primary-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                </div>
+                <div class="text-2xl font-bold">
+                    <span class="text-logo-darkgray">VALIA</span> <span class="text-logo-lightblue">RH</span>
+                </div>
+            </a>
+            <div class="flex flex-row-reverse "><a href="#"><img class="w-7 h-7 ml-12 -mr-4 bg-white rounded-full py-0.5" src="../res/arrow-left.svg"></a>  </div>
+
+            <!-- add demande btn -->
+            <button
+                class="flex flex-row items-center text-white text-sm font-bold bg-primary-blue mx-3 mb-7 mt-4 px-0 py-4  rounded-tr-lg rounded-bl-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                        clip-rule="evenodd" />
+                </svg>
+                <div class="ml-3">Nouvelle demande</div>
+            </button>
+
+            <!-- navigation -->
+            <nav class="text-base text-text-lightgray font-semibold mt-2.5 ">
+                <div class="flex  py-3"><span class="blue-line rounded-br-md left-0"></span> <a href="#" class="block px-3 font-bold text-primary-blue"><i class="fa fa-home fa-lg mr-3" aria-hidden="true"></i> Accueil</a></div> 
+                <a href="#" class="block py-2.5 px-5"> <i class="fa fa-file-text-o fa-lg mr-3"></i> Documents</a>
+                <a href="#" class="block py-2.5 px-5"> <img class="h-5 w-5 mr-3" src="../res/palm-tree.svg" align="left"> Conges</a>
+                <a href="#" class="block py-2.5 px-5"> <img class="h-5 w-5 mr-3" src="../res/absence.svg" align="left">   Absence</a>
+                <a href="#" class="block py-2.5 px-5"> <img class="h-5 w-5 mr-3" src="../res/cominication.svg" align="left"> Communication</a>
+                <a href="#" class="block py-2.5 px-5"> <img class="h-5 w-5 mr-3" src="../res/collaborateur.svg" align="left"> Collaborateur</a>
+                <a href="#" class="block py-2.5 px-5"> <img class="h-5 w-5 mr-3" src="../res/evenements.svg" align="left"> Evenements</a>
+                <a href="#" class="block py-2.5 px-5"> <img class="h-5 w-5 mr-3" src="../res/resource.svg" align="left">  Resource</a>
+            </nav>
+        </div>
+
+        <div class="flex-1 p-3 mx-5">
+            <!-- header -->
+            <div class="flex justify-between items-center">
+                <div class="text-text-darkgray text-3xl font-bold p-2">Bonjour Yassine</div>
+                <div class="flex">
+                    <a href="#" class="mx-2 mt-6"> <img class="h-5 w-5 " src="../res/bell.svg" align="left"> <span class="text-xs mt-10 text-white px-1  bg-text-error rounded-full -ml-1">2</span> </a>
+                    <a href="#" class="mx-2 mt-6"> <img class="h-5 w-5 " src="../res/message-regular.svg"></a>
+                    <a href="#" class="flex">
+                        <div class="m-2 bg-bg-warning rounded-full p-2 "> <img class="h-8 w-8 "
+                                src="../res/avatar-face.svg"> </div>
+                        <div class="flex flex-col p-2 mt-1.5 -ml-2">
+                            <div class="text-sm font-bold text-text-darkgray">Yassine El Alami</div>
+                            <div class="text-xs text-text-lightgray -mt-1">Espace collaborateur</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+             <!-- content -->
+            <div class="flex flex-row flex-grow mx-2 mt-7 ">
+                <!-- mes demandes -->
+                <div class="flex flex-col basis-5/12 bg-white rounded-lg px-2 whitespace-nowrap	"> 
+                    <div class="flex  my-2 p-5 border-solid border-2 border-light-gray rounded-lg ">
+                        <div></div>
+                        <div class="text-2xl text-text-darkgray font-bold">Mes demandes</div>
+                    </div>
+                    <!-- search input -->
+                    <div class="relative flex bg-light-gray border-solid border border-border-gray rounded-md  items-center ">
+                        <img class="absolute w-5 h-5 text-light-gray m-1.5 pointer-events-none" src="../res/search.svg">
+                        <input class="w-full font-semibold bg-light-gray pl-8 pr-3 py-2 mx-1.5" type="text" placeholder="What are you looking for today?">
+                    </div>
+                    <!-- content -->
+                    <div id="scroll" style="" class="flex flex-col mt-5 max-h-96 overflow-y-auto ">
+                        <!-- demande de documents -->
+                        <div class="flex flex-col m-2">
+                            <div class="flex flex-row justify-between items-center mb-3">
+                                <div class="flex items-center font-bold text-base"><i class="h-2 w-2 fa fa-file-text-o fa-lg mr-5"></i> Mes demande de documents</div>
+                                <a href="#" class="font-bold text-xs underline">Voire tout</a>
+                            </div>
+                            <div class="flex flex-row justify-between items-center my-2 p-3.5 border-solid border-2 border-light-gray rounded-lg">
+                                <div class="basis-9/12 font-semibold text-sm">Attestation de salaire</div>
+                                <div class="basis-3/12 w-full flex items-center text-xs font-bold bg-bg-warning text-text-warning px-2 py-1 rounded-tr-lg rounded-bl-lg"> <img class="h-3 w-3 mr-1" src="../res/clock.svg"> En course</div>
+                            </div>
+                            <div class="flex flex-row justify-between items-center my-2 p-3.5 border-solid border-2 border-light-gray rounded-lg">
+                                <div class="basis-9/12 font-semibold text-sm">Attestation de salaire</div>
+                                <div class="basis-3/12 w-full flex items-center text-xs font-bold bg-bg-success text-text-success px-2 py-1 rounded-tr-lg rounded-bl-lg"> <img class="h-3 w-3 mr-1" src="../res/check.svg"> Complete</div>
+                            </div>
+                        </div>
+                        <!-- demande de conges -->
+                        <div class="flex flex-col m-2">
+                            <div class="flex flex-row justify-between items-center my-3">
+                                <div class="flex items-center font-bold text-base"> <img class="h-5 w-5 mr-2" src="../res/palm-tree-black.svg"> Mes demande de conge</div>
+                                <a href="#" class="font-bold text-xs underline ">Voire tout</a>
+                            </div>
+                            <div class="flex flex-row justify-between items-center my-2 p-3.5 border-solid border-2 border-light-gray rounded-lg">
+                                <div class="basis-9/12 font-semibold text-sm">Conge specials Mariage (4jours)</div>
+                                <div class="basis-3/12 flex  items-center text-xs font-bold bg-bg-error text-text-error py-1 rounded-tr-lg rounded-bl-lg"> <img class="h-3 w-3 ml-2 mr-1" src="../res/circle-xmark-regular.svg"> Refuse</div>
+                            </div>
+                            <div class="flex flex-row justify-between items-center my-2 p-3.5 border-solid border-2 border-light-gray rounded-lg">
+                                <div class="basis-9/12 font-semibold text-sm">Conge annuel (12jours)</div>
+                                <div class="basis-3/12 flex items-center text-xs font-bold bg-bg-success text-text-success px-2 py-1 rounded-tr-lg rounded-bl-lg"> <img class="h-3 w-3 mr-1" src="../res/check.svg"> Complete</div>
+                            </div>
+                        </div>
+                        <!-- demande d'absences -->
+                        <div class="flex flex-col m-2">
+                            <div class="flex flex-row justify-between items-center my-3">
+                                <div class="flex font-bold text-base"><img class="h-5 w-5 mr-2" src="../res/absebce-black.svg"> Mes demande d'absences</div>
+                                <a href="#" class="font-bold text-xs underline">Voire tout</a>
+                            </div>
+                            <div class="flex flex-row justify-between items-center my-2 p-3.5 border-solid border-2 border-light-gray rounded-lg">
+                                <div class="basis-9/12 font-semibold text-sm">Arret maladie (4 jours)</div>
+                                <div class="basis-3/12 flex items-center text-xs font-bold bg-bg-warning text-text-warning px-2 py-1 rounded-tr-lg rounded-bl-lg"> <img class="h-3 w-3 mr-1" src="../res/clock.svg"> En course</div>
+                            </div>
+                            <div class="flex flex-row justify-between items-center my-2 p-3.5 border-solid border-2 border-light-gray rounded-lg">
+                                <div class="basis-9/12 font-semibold text-sm">Permis de conduire (1 jour)</div>
+                                <div class="basis-3/12 flex items-center text-xs font-bold bg-bg-success text-text-success px-2 py-1 rounded-tr-lg rounded-bl-lg"> <img class="h-3 w-3 mr-1" src="../res/check.svg"> Complete</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- mes evenements -->
+                <div class="flex flex-col basis-7/12 bg-white rounded-lg ml-7 ">
+                    <div class="flex m-2 p-5 border-solid border-2 border-light-gray rounded-lg ">
+                        <div></div>
+                        <div class="text-2xl text-text-darkgray font-bold">Mes evenements</div>
+                    </div>
+                    <!-- search input -->
+                    <div class="relative flex bg-light-gray border-solid border border-border-gray rounded-md  items-center mx-2">
+                        <img class="absolute w-5 h-5 text-light-gray m-1.5 pointer-events-none" src="../res/search.svg">
+                        <input class="w-full font-semibold bg-light-gray pl-8 pr-3 py-2 mx-1.5" type="text" placeholder="What are you looking for today?">
+                    </div>
+                    <div class="flex mx-2 mt-4 mb-1 text-sm">
+                        <button class="bg-primary-blue font-semibold text-white px-6 py-0.5 rounded-lg mr-4">Les evenements de la semaine</button>
+                        <button class="bg-white font-semibold text-primary-blue border-2 border-primary-blue  px-6 py-0.5 rounded-lg">Les evenements de la semaine</button>
+                    </div>
+
+                    <!-- content -->
+                    <div id="scroll" style="" class=" max-h-80 overflow-y-auto m-2">
+                        <div class="flex flex-row items-center px-4 border-2 border-light-gray rounded-lg py-5 ">
+                            <div class="flex basis-2/6 mr-2">
+                                <img class="h-28  rounded-md" src="https://envato-shoebox-0.imgix.net/d760/6d55-0b07-4940-a7b0-9cef01b7fea8/Soccer+Ball+on+stripe_6603.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=234a6fd66a6ce5d7b368dc52fbe62a5b">
+                            </div>
+                            <div class="flex basis-3/6 flex-col mx-2">
+                                <div class="text-lg text-text-darkgray font-bold">Soccor Tournament</div>
+                                <div class="text-sm text-text-lightgray mb-1.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  </div>
+                                <div class="flex my-2">
+                                    <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/evenements-black.svg">08 Janvier 2022</div>
+                                    <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/clock-black.svg">05h30 min</div>
+                                </div>
+                                <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/location-solid.svg">Bd Ziraoui Casablanca 20250</div>
+                            </div>
+                            <div class="flex flex-col items-center basis-1/6 text-xs">
+                                <button class="bg-primary-blue w-full text-white px-4 py-2  rounded-tr-lg rounded-bl-lg mb-3 whitespace-nowrap	">Voir plus</button>
+                                <button class="bg-white w-full text-primary-blue border-2 border-primary-blue px-4 py-2  rounded-tr-lg rounded-bl-lg">Annuler</button>
+                            </div> 
+                        </div>
+                        <div class="flex flex-row items-center px-4 border-2 border-light-gray rounded-lg py-5 my-3">
+                            <div class="flex basis-2/6 mr-2">
+                                <img class="h-28  rounded-md" src="https://envato-shoebox-0.imgix.net/d760/6d55-0b07-4940-a7b0-9cef01b7fea8/Soccer+Ball+on+stripe_6603.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=234a6fd66a6ce5d7b368dc52fbe62a5b">
+                            </div>
+                            <div class="flex basis-3/6 flex-col mx-2">
+                                <div class="text-base text-text-darkgray font-bold">Soccor Tournament</div>
+                                <div class="text-sm text-text-lightgray mb-1.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  </div>
+                                <div class="flex my-2">
+                                    <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/evenements-black.svg">08 Janvier 2022</div>
+                                    <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/clock-black.svg">05h30 min</div>
+                                </div>
+                                <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/location-solid.svg">Bd Ziraoui Casablanca 20250</div>
+                            </div>
+                            <div class="flex flex-col items-center basis-1/6 text-xs">
+                                <button class="bg-primary-blue w-full text-white px-4 py-2  rounded-tr-lg rounded-bl-lg mb-3 whitespace-nowrap	">Voir plus</button>
+                                <button class="bg-white w-full text-primary-blue border-2 border-primary-blue px-4 py-2  rounded-tr-lg rounded-bl-lg">Annuler</button>
+                            </div> 
+                        </div>
+                        <div class="flex flex-row items-center px-4 border-2 border-light-gray rounded-lg py-5 my-3">
+                            <div class="flex basis-2/6 mr-2">
+                                <img class="h-28  rounded-md" src="https://envato-shoebox-0.imgix.net/d760/6d55-0b07-4940-a7b0-9cef01b7fea8/Soccer+Ball+on+stripe_6603.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=234a6fd66a6ce5d7b368dc52fbe62a5b">
+                            </div>
+                            <div class="flex basis-3/6 flex-col mx-2">
+                                <div class="text-lg text-text-darkgray font-bold">Soccor Tournament</div>
+                                <div class="text-sm text-text-lightgray mb-1.5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.  </div>
+                                <div class="flex my-2">
+                                    <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/evenements-black.svg">08 Janvier 2022</div>
+                                    <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/clock-black.svg">05h30 min</div>
+                                </div>
+                                <div class="flex items-center font-bold text-xs mr-3"><img class="h-3 w-3 mr-1" src="../res/location-solid.svg">Bd Ziraoui Casablanca 20250</div>
+                            </div>
+                            <div class="flex flex-col items-center basis-1/6 text-xs">
+                                <button class="bg-primary-blue w-full text-white px-4 py-2  rounded-tr-lg rounded-bl-lg mb-3 whitespace-nowrap	">Voir plus</button>
+                                <button class="bg-white w-full text-primary-blue border-2 border-primary-blue px-4 py-2  rounded-tr-lg rounded-bl-lg">Annuler</button>
+                            </div> 
+                        </div>
+                        
+                         
+                    </div>
+                    <div class="w-full flex flex-col items-center mb-4">
+                        <a href="#" class="font-bold text-xs underline">Exporer plus d'evenements</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<style>
+    #scroll::-webkit-scrollbar {
+        width: 8px;               /* width of the entire scrollbar */
+    }
+    #scroll::-webkit-scrollbar-track {
+        background: #e4e9ee;        /* color of the tracking area */
+    }
+    #scroll::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background-color: #a8aaad;
+        /* border: 3px solid orange;   */
+    }
+    #scroll {
+        scrollbar-width: thin;          /* "auto" or "thin"  */
+        scrollbar-color: #c3c4c7 #edf2f7;   /* scroll thumb & track */
+    }
+    .blue-line{
+        border-left: 6px solid #0083F6;
+        height: 80;
+    }
+    </style>
+</html>
